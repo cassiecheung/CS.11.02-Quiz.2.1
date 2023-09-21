@@ -25,8 +25,7 @@ public class Main {
         System.out.println(resultThree);
         System.out.println("Please enter anything you would like to be printed to the console.");
         String toBePrinted = scanner.nextLine();
-        String resultFour = printme(toBePrinted);
-        System.out.println(resultFour);
+        printMe(toBePrinted);
     }
     public static int add(int numOne,int numTwo) {
         return numOne + numTwo;
@@ -40,7 +39,7 @@ public class Main {
         int z = add(0, numFour);
         return x + y + z;
     }
-    public static String printme(String toBePrinted) {
-        return toBePrinted;
+    public static void printMe(String toBePrinted) {
+        System.out.println(toBePrinted);
     }
 }
